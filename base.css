@@ -253,6 +253,10 @@ aside#extras .extra {
   margin-bottom: 24px;
 }
 
+aside#extras .extra form + p {
+  margin-top: 5px;
+}
+
 footer#contentinfo {
   padding-top: 38px;
   padding-bottom: 38px;
