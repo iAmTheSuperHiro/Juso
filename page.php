@@ -1,22 +1,37 @@
 <?php get_header(); ?>
 
-  <div id="content" role="main">
-
-    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-    <div class="post" id="post-<?php the_ID(); ?>">
-    <h2><?php the_title(); ?></h2>
-      <div class="entry">
-        <?php the_content('<p class="serif">Read the rest of this page &raquo;</p>'); ?>
-
-        <div class="postmetadata">
-          <?php the_tags('Tags: ', ', ', ''); ?></span><?php edit_post_link('Edit', ' | ', ''); ?>
-        </div>
-
-       </div>
-    </div>
-    <?php endwhile; endif; ?>
-
-  </div>
+    <div class="body container floatwrapper">
+      <section id="content" class="floatleft">
+        <?php if (have_posts()) : ?>
+          <?php while (have_posts()) : the_post(); ?>
+            <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
+              <header>
+                <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+                <p><time datetime="<?php the_time('c'); ?>"><?php the_time('F jS, Y H:i a') ?></time></p>
+              </header>
+              <div>
+                <?php adsensem_ad('ad-links'); ?>
+                <?php the_content('Read the rest of this entry &raquo;'); ?>
+                <?php adsensem_ad('ad-entry-bottom'); ?>
+              </div>
+              <footer>
+                <p>
+                  <?php edit_post_link('Edit', '', ''); ?>
+                </p>
+              </footer>
+            </article>
+          <?php endwhile; ?>
+        <?php else : ?>
+          <article>
+            <header>
+              <h2>Not Found</h2>
+            </header>
+            <div>
+              <p>Sorry, no posts matched your criteria.</p>
+            </div>
+          </article>
+        <?php endif; ?>
+      </section>
 
 <?php get_sidebar(); ?>
 

@@ -48,7 +48,7 @@
         </div>
         <div class="floatwrapper">
           <div class="floatleft">
-            <img src="<?php bloginfo('template_directory');?>/images/me_red_small.jpg" alt="Hiro SHINOHARA" />
+            <img src="<?php bloginfo('template_directory');?>/images/logo.jpg" alt="Hiro SHINOHARA" />
           </div>
           <p>
             I'm writing code, blogging about web tech startups in Japan and around Asia, hosting a podcast show called <a href="http://messa.tv/" target="_blank">messa.tv</a>. Founder/CEO of <a href="http://www.messaliberty.com/" target="_blank">messaliberty Inc</a> based in Japan. Working around Osaka, Kyoto and Tokyo. More <a href="http://about.me/mlhshino/">about me</a>.

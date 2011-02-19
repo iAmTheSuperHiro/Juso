@@ -52,24 +52,7 @@
             <h3>Friend Me</h3>
           </header>
           <ul>
-            <li><a href="http://twitter.com/mlhshino">Twitter</a></li>
-            <li><a href="http://www.facebook.com/mlhshino">Facebook</a></li>
-            <li><a href="http://www.linkedin.com/in/mlhshino">LinkedIn</a></li>
-            <li><a href="http://foursquare.com/user/mlhshino">Foursquare</a></li>
-            <li><a href="http://mlhshino.tumblr.com">Tumblr</a></li>
-            <li><a href="http://www.ustream.tv/channel/mlhshino">Ustream</a></li>
-            <li><a href="http://friendfeed.com/mlhshino">FriendFeed</a></li>
-            <li><a href="http://www.google.com/profiles/mlhshino">Google Buzz</a></li>
-            <li><a href="http://youtube.com/mlhshino">YouTube</a></li>
-            <li><a href="http://vimeo.com/mlhshino/">Vimeo</a></li>
-            <li><a href="http://flickr.com/people/psycho-spider/">Flickr</a></li>
-            <li><a href="http://delicious.com/mlhshino">Delicious</a></li>
-            <li><a href="http://digg.com/users/mlhshino">Digg</a></li>
-            <li><a href="http://www.quora.com/Hiro-Shinohara">Quora</a></li>
-            <li><a href="http://www.last.fm/user/mlhshino">Last.fm</a></li>
-            <li><a href="http://mixi.jp/show_profile.pl?id=1305752">mixi</a></li>
-            <li><a href="http://plancast.com/mlhshino">Plancast</a></li>
-            <li><a href="http://www.dopplr.com/traveller/mlhshino">Dopplr</a></li>
+            <?php wp_list_bookmarks('title_before=&title_after&title_li=&categorize=0&orderby=rating'); ?>
           </ul>
         </div>
       </aside>
