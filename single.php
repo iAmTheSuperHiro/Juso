@@ -19,7 +19,7 @@
                 <?php adsensem_ad('ad-entry-bottom'); ?>
               </div>
               <footer>
-                <p>
+                <p class="small">
                   <?php edit_post_link('Edit', '', ' | '); ?><?php the_tags('Tags: ', ', ', ''); ?>
                 </p>
                 <p class="small">
@@ -34,6 +34,7 @@
                     Both comments and pings are currently closed.
                   <?php } ?>
                 </p>
+                <?php comments_template(); ?>
               </footer>
             </article>
           <?php endwhile; ?>
@@ -47,9 +48,6 @@
             </div>
           </article>
         <?php endif; ?>
-        <aside>
-          <?php comments_template(); ?>
-        </aside>
       </section>
 
 <?php get_sidebar(); ?>

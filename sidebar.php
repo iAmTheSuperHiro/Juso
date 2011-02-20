@@ -55,5 +55,13 @@
             <?php wp_list_bookmarks('title_before=&title_after&title_li=&categorize=0&orderby=rating'); ?>
           </ul>
         </div>
+        <div class="extra">
+          <header>
+            <h3>Monthly Articles</h3>
+          </header>
+          <ul>
+            <?php wp_get_archives('type=monthly'); ?>
+          </ul>
+        </div>
       </aside>
     </div>

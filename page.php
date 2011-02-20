@@ -15,7 +15,7 @@
                 <?php adsensem_ad('ad-entry-bottom'); ?>
               </div>
               <footer>
-                <p>
+                <p class="small">
                   <?php edit_post_link('Edit', '', ''); ?>
                 </p>
               </footer>

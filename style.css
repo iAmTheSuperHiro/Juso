@@ -254,7 +254,7 @@ section#content article table td {
   padding: 5px;
 }
 
-section#content footer {
+section#content footer .small {
   text-align: right;
 }
 
@@ -281,7 +281,7 @@ section#content #comments .comment-meta {
 }
 
 section#content #comments .reply {
-  text-align: right;
+  font-size: 12px;
 }
 
 section#content #respond textarea {

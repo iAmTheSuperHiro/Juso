@@ -28,7 +28,8 @@
         <p class="floatright"><?php next_comments_link() ?></p>
       </nav>
     </footer>
- <?php else : // this is displayed if there are no comments so far ?>
+  </article>
+<?php else : // this is displayed if there are no comments so far ?>
   <?php if ( comments_open() ) : ?>
     <!-- If comments are open, but there are no comments. -->
    <?php else : // comments are closed ?>
@@ -41,7 +42,7 @@
   <div id="respond">
     <h4><?php comment_form_title( 'Leave a Reply', 'Leave a Reply to %s' ); ?></h4>
     <div class="cancel-comment-reply">
-      <p class="small"><?php cancel_comment_reply_link(); ?></p>
+      <p><?php cancel_comment_reply_link(); ?></p>
     </div>
     <?php if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
       <p>You must be <a href="<?php echo wp_login_url( get_permalink() ); ?>">logged in</a> to post a comment.</p>
@@ -50,9 +51,9 @@
         <?php if ( is_user_logged_in() ) : ?>
           <p>Logged in as <a href="<?php echo get_option('siteurl'); ?>/wp-admin/profile.php"><?php echo $user_identity; ?></a>. <a href="<?php echo wp_logout_url(get_permalink()); ?>" title="Log out of this account">Log out &raquo;</a></p>
         <?php else : ?>
-          <p><input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="22" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> /><label for="author"><p class="small">Name <?php if ($req) echo "(required)"; ?></p></label></p>
-          <p><input type="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> /><label for="email"><p class="small">Mail (will not be published) <?php if ($req) echo "(required)"; ?></p></label></p>
-          <p><input type="text" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" size="22" tabindex="3" /><label for="url"><p class="small">Website</p></label></p>
+          <p><input type="text" name="author" id="author" value="<?php echo esc_attr($comment_author); ?>" size="22" tabindex="1" <?php if ($req) echo "aria-required='true'"; ?> /><label for="author"><p>Name <?php if ($req) echo "(required)"; ?></p></label></p>
+          <p><input type="text" name="email" id="email" value="<?php echo esc_attr($comment_author_email); ?>" size="22" tabindex="2" <?php if ($req) echo "aria-required='true'"; ?> /><label for="email"><p>Mail (will not be published) <?php if ($req) echo "(required)"; ?></p></label></p>
+          <p><input type="text" name="url" id="url" value="<?php echo esc_attr($comment_author_url); ?>" size="22" tabindex="3" /><label for="url"><p>Website</p></label></p>
         <?php endif; ?>
         <p><textarea name="comment" id="comment" rows="10" tabindex="4"></textarea></p>
         <p id="submit"><input name="submit" type="submit" tabindex="5" value="Submit Comment" /><?php comment_id_fields(); ?></p>
