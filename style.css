@@ -50,16 +50,19 @@ figure img {width: 100%;}
   ------------------  */
 
 .huge, h1 {
+  color: rgb(50,50,50);
   font-size: 42px;
   line-height: 46px;
   letter-spacing: -1px;
 }
 
 .large, h2 {
+  color: rgb(50,50,50);
   font-size: 26px;
 }
 
 .big, h3 {
+  color: rgb(50,50,50);
   font-size: 24px;
 }
 

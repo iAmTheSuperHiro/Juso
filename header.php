@@ -41,8 +41,8 @@
           </hgroup>
           <nav class="floatright">
             <ul>
-              <li><a href="http://www.hiroyukishinohara.com/">English</a></li>
-              <li><a href="http://jp.hiroyukishinohara.com/">Japanese</a></li>
+              <li><a href="http://www.hiroyukishinohara.com/">English &raquo;</a></li>
+              <li><a href="http://jp.hiroyukishinohara.com/">Japanese &raquo;</a></li>
             </ul>
           </nav>
         </div>
