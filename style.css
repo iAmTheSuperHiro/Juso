@@ -2,7 +2,7 @@
     Theme Name: Juso
     Theme URI: http://www.hiroyukishinohara.com/
     Description: HTML5 WordPress Theme
-    Version: 1.0
+    Version: 1.1
     Author: Hiro SHINOHARA
     Author URI: http://about.me/mlhshino
     Tags: simple, html5
@@ -234,27 +234,29 @@ section#content article img {
 }
 
 section#content article p {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  line-height: 150%;
 }
 
 section#content article h3 {
   border-bottom: 2px dotted rgb(50,50,50);
-  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 section#content article h4 {
   border-bottom: 1px dotted rgb(50,50,50);
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 section#content article ul, section#content article ol {
   padding-left: 24px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 section#content article table {
   border: 1px solid rgb(50,50,50);
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 section#content article table th {
