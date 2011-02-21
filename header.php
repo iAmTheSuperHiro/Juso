@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 
     <meta name="viewport" content="width=device-width; initial-scale=1"/>
-    <!-- Add "maximum-scale=1" to fix the Mobile Safari auto-zoom bug on orientation changes,
-      but keep in mind that it will disable user-zooming completely. Bad for accessibility. -->
+    <!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
 
     <meta name="google-site-verification" content="aWuDaB5rzKtvmM5QcmzMIJjpXxs-HQ7lOIn51p5szT0" />

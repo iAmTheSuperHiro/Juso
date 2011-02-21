@@ -15,9 +15,12 @@
     #3 Color: 204,204,204
 */
 
-/*  Based on Less Framework 3 by Joni Korpi
+/*
+    Less Framework 4
     http://lessframework.com
-  ------------------------  */
+    by Joni Korpi
+    License: http://creativecommons.org/licenses/MIT/
+*/
 
 
 /*  Resets
@@ -25,7 +28,7 @@
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em,
-img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i,
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr,
 dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figure, figcaption, hgroup,
@@ -42,27 +45,21 @@ footer, header, nav, section, audio, video {
 
 a img {border: 0;}
 
-figure {position: relative;}
-figure img {width: 100%;}
-
 
 /*  Typography presets
   ------------------  */
 
 .huge, h1 {
-  color: rgb(50,50,50);
   font-size: 42px;
   line-height: 46px;
   letter-spacing: -1px;
 }
 
 .large, h2 {
-  color: rgb(50,50,50);
   font-size: 26px;
 }
 
 .big, h3 {
-  color: rgb(50,50,50);
   font-size: 24px;
 }
 
@@ -123,24 +120,57 @@ header#banner * a:active, footer#contentinfo * a:active {
 }
 
 
-/*  Default 8-column layout
-  60 px columns, 24 px gutters, 60 px margins, 768 px total
-  ---------------------------------------------------------
-  1     2      3      4      5      6      7      8
-  60px  144px  228px  312px  396px  480px  564px  648px  */
+/* Selection colours (easy to forget) */
+
+::selection      {background: rgb(255,255,158);}
+::-moz-selection   {background: rgb(255,255,158);}
+img::selection     {background: transparent;}
+img::-moz-selection  {background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
+
+/*    Default Layout: 992px.
+    Gutters: 24px.
+    Outer margins: 48px.
+    Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
 
 body {
   background: rgb(255,255,255);
-  -webkit-tap-highlight-color: rgb(255,255,0);
+  -webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
 }
 
 .body {
-  padding-left: 60px;
-  padding-right: 60px;
+  padding: 72px 48px 84px;
 }
 
 .container {
-  width: 648px;
+  width: 896px;
+}
+
+header#banner {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  color: rgb(255,255,255);
+  background: rgb(50,50,50);
+}
+
+section#content {
+  width: 620px;
+  margin-right: 24px;
+}
+
+aside#extras {
+  width: 252px;
+}
+
+footer#contentinfo {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  color: rgb(255,255,255);
+  background: rgb(50,50,50);
 }
 
 .floatwrapper {
@@ -154,18 +184,6 @@ body {
 
 .floatright {
   float: right;
-}
-
-::selection      {background: rgb(255,255,0);}
-::-moz-selection   {background: rgb(255,255,0);}
-img::selection     {background: transparent;}
-img::-moz-selection {background: transparent;}
-
-header#banner {
-  padding-top: 38px;
-  padding-bottom: 38px;
-  color: rgb(255,255,255);
-  background: rgb(50,50,50);
 }
 
 header#banner #title {
@@ -187,12 +205,6 @@ header#banner * img {
   -webkit-box-shadow: 2px 2px 2px rgba(0,0,0, 0.2);
   -moz-box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
   background: rgb(255,255,255);
-}
-
-section#content {
-  width: 396px;
-  padding-top: 24px;
-  margin-right: 24px;
 }
 
 section#content #pagetitle h2 {
@@ -295,11 +307,6 @@ section#content #respond #submit {
   text-align: right;
 }
 
-aside#extras {
-  width: 228px;
-  padding-top: 24px;
-}
-
 aside#extras h3 {
   padding-bottom: 5px;
   border-bottom: 2px solid rgb(50,50,50);
@@ -323,85 +330,76 @@ aside#extras .extra form + p {
   margin-top: 5px;
 }
 
-footer#contentinfo {
-  padding-top: 38px;
-  padding-bottom: 38px;
-  color: rgb(255,255,255);
-  background: rgb(50,50,50);
-}
 
-/*  13-column layout
-  60 px columns, 24 px gutters, 72 px margins, 1212 px total (extra space for scrollbars)
-  ---------------------------------------------------------------------------------------
-  1     2      3      4      5      6      7      8      9      10     11     12     13
-  60px  144px  228px  312px  396px  480px  564px  648px  732px  816px  900px  984px  1068px  */
+/*    Tablet Layout: 768px.
+    Gutters: 24px.
+    Outer margins: 28px.
+    Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
 
-@media only screen and (min-width: 1212px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
 
   .body {
-    padding-left: 72px;
-    padding-right: 72px;
+    padding: 48px 28px 60px;
   }
 
   .container {
-    width: 1068px;
+    width: 712px;
   }
 
   header#banner {
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 28px;
+    padding-bottom: 28px;
   }
 
   section#content {
-    width: 648px;
+    width: 436px;
     margin-right: 24px;
   }
 
   aside#extras {
-    width: 396px;
+    width: 252px;
   }
 
   footer#contentinfo {
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 28px;
+    padding-bottom: 28px;
   }
 
 }
 
 
-/*  5-column layout
-  60 px columns, 24 px gutters, 42 px margins, 480 px total
-  ---------------------------------------------------------
-  1     2      3      4      5
-  60px  144px  228px  312px  396px  */
+/*    Wide Mobile Layout: 480px.
+    Gutters: 24px.
+    Outer margins: 22px.
+    Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
 
-@media only screen and (max-width: 767px) and (min-width: 480px) {
-
-  body {
-    /* Prevents Mobile Safari from bumping up font sizes in landscape */
-    -webkit-text-size-adjust: 100%;
-  }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
 
   .body {
-    padding-left: 42px;
-    padding-right: 42px;
+    padding: 36px 22px 48px;
   }
 
   .container {
-    width: 396px;
+    width: 436px;
   }
 
   header#banner {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 22px;
+    padding-bottom: 22px;
   }
 
   header#banner * img {
-    margin-bottom: 15px;
+    margin-bottom: 22px;
   }
 
   section#content, aside#extras {
-    width: 396px;
+    width: 436px;
   }
 
   .floatleft {
@@ -413,20 +411,60 @@ footer#contentinfo {
   }
 
   footer#contentinfo {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 22px;
+    padding-bottom: 22px;
   }
 
 }
 
 
-/*  3-column layout
-  60 px columns, 24 px gutters, 46 px margins, 320 px total
-  ---------------------------------------------------------
-  1     2      3
-  60px  144px  228px  */
+/*    Mobile Layout: 320px.
+    Gutters: 24px.
+    Outer margins: 34px.
+    Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 767px) {
+
+  body {
+    font-size: 14px;
+  }
+
+  .body {
+    padding: 48px 34px 60px;
+  }
+
+  .container {
+    width: 252px;
+  }
+
+  header#banner {
+    padding-top: 34px;
+    padding-bottom: 34px;
+  }
+
+  header#banner * img {
+    margin-bottom: 34px;
+  }
+
+  section#content, aside#extras {
+    width: 252px;
+  }
+
+  .floatleft {
+    float: none;
+  }
+
+  .floatright {
+    float: none;
+  }
+
+  footer#contentinfo {
+    padding-top: 34px;
+    padding-bottom: 34px;
+  }
 
   h1 {
     font-size: 24px;
@@ -446,47 +484,6 @@ footer#contentinfo {
   h1 + h2 {
     font-size: 14px;
     line-height: 120%;
-  }
-
-  body {
-    /* Prevents Mobile Safari from bumping up font sizes in landscape */
-    -webkit-text-size-adjust: 100%;
-    font-size: 14px;
-  }
-
-  .body {
-    padding-left: 46px;
-    padding-right: 46px;
-  }
-
-  .container {
-    width: 228px;
-  }
-
-  header#banner {
-    padding-top: 26px;
-    padding-bottom: 26px;
-  }
-
-  header#banner * img {
-    margin-bottom: 15px;
-  }
-
-  section#content, aside#extras {
-    width: 228px;
-  }
-
-  .floatleft {
-    float: none;
-  }
-
-  .floatright {
-    float: none;
-  }
-
-  footer#contentinfo {
-    padding-top: 26px;
-    padding-bottom: 26px;
   }
 
 }
