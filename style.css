@@ -275,6 +275,10 @@ section#content footer .small {
   text-align: right;
 }
 
+section#content footer table {
+  border: none;
+}
+
 section#content #comments ol {
   list-style-type: none;
 }

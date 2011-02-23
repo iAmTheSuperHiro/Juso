@@ -13,6 +13,7 @@
             <p>
               <a href="http://feeds.feedburner.com/hiroyukishinohara/RpOL"><img src="http://feeds.feedburner.com/~fc/hiroyukishinohara/RpOL?bg=333333&amp;fg=FFFFFF&amp;anim=0" height="26" width="88" style="border:0" alt="RSS" /></a>
             </p>
+            <iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.hiroyukishinohara.com%2F&amp;layout=standard&amp;show_faces=true&amp;width=232&amp;action=like&amp;colorscheme=light&amp;height=60" scrolling="no" frameborder="0" style="border:1px solid rgb(170,170,170); overflow:hidden; width:232px; height:60px; padding: 10px;" allowTransparency="true"></iframe>
           </div>
         </div>
         <div class="extra">
@@ -54,6 +55,12 @@
           <ul>
             <?php wp_list_bookmarks('title_before=&title_after&title_li=&categorize=0&orderby=rating'); ?>
           </ul>
+        </div>
+        <div class="extra">
+          <header>
+            <h3>Facebook Page</h3>
+          </header>
+          <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FHiro-Shinohara%2F145946052133589&amp;width=252&amp;colorscheme=light&amp;show_faces=true&amp;stream=true&amp;header=false&amp;height=395" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:252px; height:395px;" allowTransparency="true"></iframe>
         </div>
         <div class="extra">
           <header>
