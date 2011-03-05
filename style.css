@@ -249,6 +249,15 @@ section#content article h4 {
   margin-bottom: 10px;
 }
 
+section#content article blockquote {
+  background: url("http://www.hiroyukishinohara.com/images/quotation.gif") no-repeat scroll left top transparent;
+  color: rgb(153,153,153);
+  font-weight: bold;
+  padding-left: 24px;
+  margin-bottom: 10px;
+  line-height: 150%;
+}
+
 section#content article ul, section#content article ol {
   padding-left: 24px;
   margin-bottom: 10px;
