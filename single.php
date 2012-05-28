@@ -14,9 +14,7 @@
                 <p><time datetime="<?php the_time('c'); ?>"><?php the_time('F jS, Y H:i a') ?></time></p>
               </header>
               <div>
-                <?php adsensem_ad('ad-links'); ?>
                 <?php the_content('Read the rest of this entry &raquo;'); ?>
-                <?php adsensem_ad('ad-entry-bottom'); ?>
               </div>
               <footer>
                 <p class="small">

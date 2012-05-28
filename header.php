@@ -15,13 +15,14 @@
     <!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
 
     <meta name="google-site-verification" content="aWuDaB5rzKtvmM5QcmzMIJjpXxs-HQ7lOIn51p5szT0" />
     <meta name="msvalidate.01" content="382D4F2780809E965531E6BB3DCD22DD" />
     <meta name="y_key" content="c7387670d444e579" />
 
+    <link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?>" href="<?php bloginfo('rss2_url'); ?>" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-    <link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?>" href="http://feeds.feedburner.com/hiroyukishinohara/RpOL" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
@@ -51,7 +52,7 @@
             <img src="<?php bloginfo('template_directory');?>/images/logo.jpg" alt="Hiro SHINOHARA" />
           </div>
           <p>
-            I'm writing code, blogging about web tech startups in Japan and around Asia, hosting a podcast show called <a href="http://messa.tv/" target="_blank">messa.tv</a>. Founder/CEO of <a href="http://www.messaliberty.com/" target="_blank">messaliberty Inc</a> based in Japan. Working around Osaka, Kyoto and Tokyo. More <a href="http://about.me/mlhshino/">about me</a>.
+            <?php the_author_meta('description', 1); ?>
           </p>
         </div>
       </div>

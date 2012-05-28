@@ -2,7 +2,7 @@
     Theme Name: Juso
     Theme URI: http://www.hiroyukishinohara.com/
     Description: HTML5 WordPress Theme
-    Version: 1.1
+    Version: 1.2
     Author: Hiro SHINOHARA
     Author URI: http://about.me/mlhshino
     Tags: simple, html5
@@ -64,7 +64,7 @@ a img {border: 0;}
 }
 
 .normal, body {
-  font: 16px/24px Helvetica, Arial, sans-serif;
+  font: 16px/24px Georgia, Palatino, "Palatino Linotype", Times, "Times New Roman", serif;
 }
 
 .small {
@@ -208,19 +208,15 @@ header#banner * img {
 }
 
 section#content #pagetitle h2 {
-  padding-bottom: 5px;
-  border-bottom: 2px dotted rgb(50,50,50);
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 section#content h2 {
-  padding-bottom: 5px;
-  border-bottom: 2px solid rgb(50,50,50);
   margin-bottom: 5px;
 }
 
 section#content article {
-  margin-bottom: 24px;
+  margin-bottom: 48px;
 }
 
 section#content nav p {
@@ -231,41 +227,37 @@ section#content article img {
   padding: 2px;
   -webkit-box-shadow: 2px 2px 2px rgba(0,0,0, 0.2);
   -moz-box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  max-width: 596px;
+  height:auto;
 }
 
 section#content article p {
-  margin-bottom: 10px;
+  margin-bottom: 24px;
   line-height: 150%;
 }
 
 section#content article h3 {
-  border-bottom: 2px dotted rgb(50,50,50);
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 24px;
 }
 
 section#content article h4 {
-  border-bottom: 1px dotted rgb(50,50,50);
-  margin-bottom: 10px;
+  margin-bottom: 24px;
 }
 
 section#content article blockquote {
-  background: url("http://www.hiroyukishinohara.com/images/quotation.gif") no-repeat scroll left top transparent;
   color: rgb(153,153,153);
-  font-weight: bold;
   padding-left: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 24px;
   line-height: 150%;
 }
 
 section#content article ul, section#content article ol {
-  padding-left: 24px;
-  margin-bottom: 10px;
+  margin-bottom: 24px;
 }
 
 section#content article table {
   border: 1px solid rgb(50,50,50);
-  margin-bottom: 10px;
+  margin-bottom: 24px;
 }
 
 section#content article table th {
@@ -323,18 +315,16 @@ section#content #respond #submit {
 }
 
 aside#extras h3 {
-  padding-bottom: 5px;
-  border-bottom: 2px solid rgb(50,50,50);
-  margin-bottom: 5px;
+  margin-bottom: 24px;
 }
 
 aside#extras ul {
   list-style-type: disc;
-  padding-left: 24px;
+  list-style-position: inside;
 }
 
 aside#extras ol {
-  padding-left: 24px;
+  list-style-position: inside;
 }
 
 aside#extras .extra {
@@ -372,6 +362,11 @@ px      68    160    252    344    436    528    620    712    */
   section#content {
     width: 436px;
     margin-right: 24px;
+  }
+
+  section#content article img {
+    max-width: 436px;
+    height:auto;
   }
 
   aside#extras {
@@ -415,6 +410,11 @@ px      68    160    252    344    436    */
 
   section#content, aside#extras {
     width: 436px;
+  }
+
+  section#content article img {
+    max-width: 436px;
+    height:auto;
   }
 
   .floatleft {
@@ -466,6 +466,10 @@ px      68    160    252    */
 
   section#content, aside#extras {
     width: 252px;
+  }
+
+  section#content article img {
+    max-width: 252px;
   }
 
   .floatleft {
