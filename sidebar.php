@@ -1,6 +1,19 @@
       <aside id="extras" class="floatright">
         <div class="extra">
           <header>
+            <h3>Hello</h3>
+          </header>
+          <div class="floatwrapper">
+            <div class="floatleft">
+              <img src="<?php bloginfo('template_directory');?>/images/logo.jpg" alt="Hiro SHINOHARA" />
+            </div>
+            <p>
+              <?php the_author_meta('description', 1); ?>
+            </p>
+          </div>
+        </div>
+        <div class="extra">
+          <header>
             <h3>Search</h3>
           </header>
           <form method="get" action="http://www.google.co.jp/custom" target="_top">
