@@ -1,4 +1,9 @@
 <?php
+if ( function_exists('register_sidebar') )
+    register_sidebar();
+?>
+
+<?php
 // Remove #more-$id
 function custom_content_more_link( $output ) {
 	$output = preg_replace('/#more-[\d]+/i', '', $output );
