@@ -47,13 +47,25 @@
             </ul>
           </nav>
         </div>
-        <div class="floatwrapper">
+        <!-- <div class="floatwrapper">
           <div class="floatleft">
             <img src="<?php bloginfo('template_directory');?>/images/logo.jpg" alt="Hiro SHINOHARA" />
           </div>
           <p>
             <?php the_author_meta('description', 1); ?>
           </p>
-        </div>
+        </div> -->
+        <nav id="mainnav">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">News Letter</a></li>
+            <li><a href="#">Webminars</a></li>
+            <li><a href="#">Hire Hiro</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Compnay</a></li>
+          </ul>
+        </nav>
       </div>
     </header>

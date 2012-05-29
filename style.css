@@ -207,6 +207,32 @@ header#banner * img {
   background: rgb(255,255,255);
 }
 
+header#banner .container nav#mainnav {
+  width: 100%;
+}
+
+header#banner .container nav#mainnav ul {
+  overflow: hidden;
+}
+
+header#banner .container nav#mainnav ul li a {
+  background: #444;
+  display: block;
+  float: left;
+  width: 12.5%;
+  padding: 10px 0;
+	text-align: center;
+	-webkit-transition: background 0.5s ease;
+	   -moz-transition: background 0.5s ease;
+	     -o-transition: background 0.5s ease;
+	    -ms-transition: background 0.5s ease;
+	        transition: background 0.5s ease;
+}
+
+header#banner .container nav#mainnav ul li a:hover {
+  background: #222;
+}
+
 section#content #pagetitle h2 {
   margin-bottom: 5px;
 }
@@ -358,6 +384,12 @@ px      68    160    252    344    436    528    620    712    */
     padding-top: 28px;
     padding-bottom: 28px;
   }
+  
+  header#banner .container nav#mainnav ul li a {
+    width: 12.5%;
+    padding: 8px 0;
+    font-size: 14px;
+  }
 
   section#content {
     width: 436px;
@@ -406,6 +438,16 @@ px      68    160    252    344    436    */
 
   header#banner * img {
     margin-bottom: 22px;
+  }
+  
+  header#banner .container nav#mainnav ul li a {
+    width: 50%;
+    padding: 6px 0;
+  }
+  
+  
+  header#banner .container nav#mainnav ul li a {
+    width: 50%;
   }
 
   section#content, aside#extras {
@@ -463,7 +505,12 @@ px      68    160    252    */
   header#banner * img {
     margin-bottom: 34px;
   }
-
+  
+  header#banner .container nav#mainnav ul li a {
+    width: 50%;
+    padding: 6px 0;
+  }
+  
   section#content, aside#extras {
     width: 252px;
   }
