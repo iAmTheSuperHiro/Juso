@@ -361,6 +361,45 @@ aside#extras .extra form + p {
   margin-top: 5px;
 }
 
+aside#extras .extra nav {
+  width: 100%;
+}
+
+aside#extras .extra nav ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+aside#extras .extra nav ul li {
+  display: inline;
+}
+
+aside#extras .extra nav ul li a {
+  background: #444;
+  color: #FFF;
+  font-size: 12px;
+  display: block;
+  float: left;
+  width: 25%;
+  padding: 10px 0;
+	text-align: center;
+	-webkit-transition: background 0.5s ease;
+	   -moz-transition: background 0.5s ease;
+	     -o-transition: background 0.5s ease;
+	    -ms-transition: background 0.5s ease;
+	        transition: background 0.5s ease;
+}
+
+aside#extras .extra nav ul li a:hover {
+  background: #222;
+}
+
+aside#extras .extra nav+div {
+  padding: 10px;
+  text-align: center;
+  background: #666;
+}
+
 
 /*    Tablet Layout: 768px.
     Gutters: 24px.

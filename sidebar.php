@@ -14,20 +14,22 @@
         </div>
         <div class="extra">
           <header>
-            <h3>Search</h3>
+            <h3>Follow</h3>
           </header>
-          <form method="get" action="http://www.google.co.jp/custom" target="_top">
-            <input type="hidden" name="domains" value="www.hiroyukishinohara.com" />
-            <input type="text" name="q" size="20" maxlength="255" value="" />
-            <input type="submit" name="sa" value="Search" /><br />
-            <input type="hidden" name="client" value="pub-4433430956875979" />
-            <input type="hidden" name="forid" value="1" />
-            <input type="hidden" name="ie" value="UTF-8" />
-            <input type="hidden" name="oe" value="UTF-8" />
-            <input type="hidden" name="cof" value="GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;FORID:1;" />
-            <input type="hidden" name="hl" value="ja" />
-            <input type="hidden" name="sitesearch" value="www.hiroyukishinohara.com" />
-          </form>
+          <nav>
+            <ul>
+              <li><a href="http://twitter.com/mlhshino">Twitter</a></li>
+              <li><a href="http://www.facebook.com/iamhiroshinohara">Facebook</a></li>
+              <li><a href="http://plus.google.com/u/0/104649052317741879480/posts">Google+</a></li>
+              <li><a href="#">RSS</a></li>
+            </ul>
+          </nav>
+          <div>
+            <form>
+              <input type="text" size="20" maxlength="255" />
+              <input type="submit" value="Subscribe" /><br />
+            </form>
+          </div>
         </div>
         <div class="extra">
           <header>
