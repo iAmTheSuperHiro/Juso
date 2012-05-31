@@ -80,14 +80,14 @@
         </div>
         <nav id="mainnav">
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">News Letter</a></li>
-            <li><a href="#">Webminars</a></li>
-            <li><a href="#">Hire Hiro</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="<?php bloginfo('url');?>/about">About</a></li>
+            <li><a href="<?php bloginfo('url');?>/newsltetter">News Letter</a></li>
+            <li><a href="<?php bloginfo('url');?>/webinars">Webminars</a></li>
+            <li><a href="<?php bloginfo('url');?>/speak">Hire Hiro</a></li>
+            <li><a href="<?php bloginfo('url');?>/contact">Contact</a></li>
             <li><a href="#">Twitter</a></li>
             <li><a href="#">Facebook</a></li>
-            <li><a href="#">Compnay</a></li>
+            <li><a href="http://www.messaliberty.com/">Compnay</a></li>
           </ul>
         </nav>
       </div>
