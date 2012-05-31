@@ -400,6 +400,9 @@ aside#extras .extra nav+div {
   background: #666;
 }
 
+.example {
+  color: #666;
+}
 
 /*    Tablet Layout: 768px.
     Gutters: 24px.

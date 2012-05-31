@@ -26,7 +26,7 @@
           </nav>
           <div>
             <form>
-              <input type="text" size="20" maxlength="255" />
+              <input id="example_subscription" type="text" size="20" maxlength="255" title="Enter your email" />
               <input type="submit" value="Subscribe" /><br />
             </form>
           </div>

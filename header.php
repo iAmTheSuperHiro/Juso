@@ -14,8 +14,26 @@
     <meta name="viewport" content="width=device-width; initial-scale=1"/>
     <!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
     <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+    
+    <?php wp_enqueue_script('jquery'); ?>
+    <?php
+      wp_enqueue_script(
+        'jquery.example',
+        '/wp-content/themes/Juso/js/jquery.example.min.js',
+        array('jquery'),
+        '1.6.0'
+      );
+    ?>
+    <?php
+      wp_enqueue_script(
+        'myscript',
+        '/wp-content/themes/Juso/js/myscript.js',
+        array('jquery', 'jquery.example'),
+        '1.0'
+      );
+    ?>
+    
 
     <meta name="google-site-verification" content="aWuDaB5rzKtvmM5QcmzMIJjpXxs-HQ7lOIn51p5szT0" />
     <meta name="msvalidate.01" content="382D4F2780809E965531E6BB3DCD22DD" />
@@ -30,7 +48,6 @@
 
     <?php wp_head(); ?>
   </head>
-
 
   <body>
     <header id="banner" class="body">
