@@ -72,6 +72,10 @@ a img {border: 0;}
   color: rgb(153,153,153);
 }
 
+.example {
+  color: #666;
+}
+
 h1 + h2 {
   font-size: 16px;
 }
@@ -160,6 +164,10 @@ header#banner {
 section#content {
   width: 620px;
   margin-right: 24px;
+}
+
+section#content header h2 {
+  line-height: 120%;
 }
 
 aside#extras {
@@ -400,9 +408,6 @@ aside#extras .extra nav+div {
   background: #666;
 }
 
-.example {
-  color: #666;
-}
 
 /*    Tablet Layout: 768px.
     Gutters: 24px.
