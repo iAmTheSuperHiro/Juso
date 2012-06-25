@@ -218,7 +218,7 @@ header#banner .container nav#mainnav ul li a {
   background: #444;
   display: block;
   float: left;
-  width: 12.5%;
+  width: 25%;
   padding: 10px 0;
 	text-align: center;
 	-webkit-transition: background 0.5s ease;
@@ -278,6 +278,7 @@ section#content article blockquote {
 
 section#content article ul, section#content article ol {
   margin-bottom: 24px;
+  list-style-position: inside;
 }
 
 section#content article table {
@@ -433,7 +434,7 @@ px      68    160    252    344    436    528    620    712    */
   }
   
   header#banner .container nav#mainnav ul li a {
-    width: 12.5%;
+    width: 25%;
     padding: 8px 0;
     font-size: 14px;
   }
