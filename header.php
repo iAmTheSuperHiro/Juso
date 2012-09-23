@@ -78,13 +78,13 @@
             </div>
           </nav>
         </div>
-        <nav id="mainnav">
+        <!-- <nav id="mainnav">
           <ul>
             <li><a href="<?php bloginfo('url');?>/about">About Hiro</a></li>
-            <li><a href="<?php bloginfo('url');?>/consulting">Consulting</a></li>
-            <li><a href="<?php bloginfo('url');?>/speak">Hire Hiro to Speak</a></li>
+            <li><a href="<?php bloginfo('url');?>/"></a></li>
+            <li><a href="<?php bloginfo('url');?>/"></a></li>
             <li><a href="<?php bloginfo('url');?>/contact">Contact</a></li>
           </ul>
-        </nav>
+        </nav> -->
       </div>
     </header>
