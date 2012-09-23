@@ -39,18 +39,20 @@
           </header>
           <?php popular_posts(); ?>
         </div>
-        <?php if (get_current_language_code === "ja_JP") : ?>
+        <?php if (get_current_language_code() === "ja_JP") : ?>
         <div class="extra">
           <header>
             <h3>Contributed Articles</h3>
           </header>
           <ul>
           <?php
-          $defaults = array(
-            'title_li' => '',
-            'categorize' => 0,
-          );
-          wp_list_bookmarks($defaults);
+          $bookmarks = get_bookmarks( array(
+            'category'   => null,
+            'hide_invisible' => 1,
+          ));
+          foreach ($bookmarks as $bookmark) { 
+            echo "<li><a href='{$bookmark->link_url}'>{$bookmark->link_name}</a><a href='http://b.hatena.ne.jp/entry/{$bookmark->link_url}'><img src='http://b.hatena.ne.jp/entry/image/{$bookmark->link_url}' /></a></li>";
+          }
           ?>
           </ul>
         </div>

@@ -12,8 +12,8 @@ add_filter( 'the_content_more_link', 'custom_content_more_link' );
 function get_current_language_code() {
   $site_lang = "en_US";
   
-  if (strstr(site_url(), "jp")) {
-    $site_url = "ja_JP";
+  if (mb_strpos(site_url(), 'jp')) {
+    $site_lang = "ja_JP";
   }
   
   return $site_lang;
